@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Find_IT</string>
+    <string name="label">Find</string>
+    <string name="content_description_more">he</string>
+    <string name="content_description_favorite">he</string>
+    <string name="more">more</string>
+    <string name="favorite">fav</string>
+</resources>
