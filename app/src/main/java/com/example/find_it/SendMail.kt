@@ -1,27 +1,26 @@
 package com.example.find_it
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.TextView
-import org.w3c.dom.Text
 
-class LoginActivity : AppCompatActivity(){
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
+class SendMail : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login_activity)
+        setContentView(R.layout.enter_mail__activity)
         val textView = findViewById<TextView>(R.id.textView4)
-        val textview1 = findViewById<TextView>(R.id.textView2)
         textView.setOnClickListener {
-            Intent(this, SignUpActivity::class.java).also {
+            Intent(this, LoginActivity::class.java).also {
                 startActivity(it)
             }
         }
-        textview1.setOnClickListener {
-            Intent(this, SendMail::class.java).also {
+        val Button = findViewById<Button>(R.id.button)
+        Button.setOnClickListener {
+            Intent(this, ForgotPassword::class.java).also {
                 startActivity(it)
             }
         }
     }
-
-
 }
